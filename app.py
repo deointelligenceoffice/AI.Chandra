@@ -1,4 +1,8 @@
 import streamlit as st
+
+st.set_page_config(page_title="AI Chandra", page_icon="🌙")
+st.title("🚀 AI Chandra")
+import streamlit as st
 import google.generativeai as genai
 import os
 from PIL import Image
