@@ -3,7 +3,7 @@ import google.generativeai as genai
 import os
 from PIL import Image
 
-# --- 1. PAGE CONFIG (MUST BE FIRST) ---
+# 1. THIS MUST BE FIRST. No other st. commands above this!
 st.set_page_config(
     page_title="AI Chandra | Lunar Intelligence", 
     page_icon="🌙", 
@@ -11,13 +11,8 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# --- 2. CONFIGURATION & BRANDING ---
-LOGO_URL = ""
-VERSION = "v1.-PRO"
-COMPANY_NAME = "Ai Chandra"
-FOUNDER = "RISHAV RAJ"
-
-# Professional logo/branding
+# 2. NOW you can do branding and logos
+LOGO_URL = "https://i.postimg.cc/q7Rv7FrJ/7da31486-00a2-4f76-a7b0-9ce3acc1933b.jpg"
 st.logo(LOGO_URL, link="https://deotechnologies.com", icon_image="🚀")
 
 # --- 3. PREMIUM UI STYLING ---
