@@ -67,8 +67,8 @@ if api_key:
     genai.configure(api_key=api_key)
     # Using the stable 1.5-flash for maximum reliability with images
     model = genai.GenerativeModel(
-        model_name="gemini-1.5-flash-latest", 
-        system_instruction=CHANDRA_IDENTITY
+    model_name="gemini-3.1-flash-lite-preview", # USE THE 2026 ELITE MODEL
+    system_instruction=CHANDRA_IDENTITY
     )
 else:
     st.error("System Failure: API Key missing in Secrets.")
